@@ -1,0 +1,14 @@
+---
+// import Dev from '/images/dev.jpg'
+const {Heading, Para, Image, Link} = Astro.props
+---
+
+<div class="border rounded-md text-center shadow-xl">
+    <img src={Image} width={300}alt="" class="rounded-t-md">
+    <h1 class="px-3 text-left text-2xl">{Heading}</h1>
+    <p class="p-3 text-justify">{Para} <span class="text-blue-500 font-semibold">
+        <a href={Link}>
+            Read More
+        </a>
+    </span></p>
+</div>
